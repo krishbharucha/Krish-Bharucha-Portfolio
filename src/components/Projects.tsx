@@ -6,6 +6,19 @@ import { Button } from "@/components/ui/button";
 export const Projects = () => {
   const projects = [
     {
+      title: "Enhancing Interpretability in Diverse Recommendation System through Explainable AI Techniques",
+      description: "Advanced machine learning model for predicting taxi travel times using spatiotemporal data analysis and ensemble methods.",
+      technologies: ["Python", "TensorFlow", "Pandas", "Scikit-learn", "XAI"],
+      type: "Research Publication",
+      highlights: [
+        "Published the research paper in the Journal of Computational Analysis and Applications (Vol. 32 No. 1 (2024)) which is Scopus Indexed.",
+        "Explored various methods for making recommendation algorithms more interpretable such as the content-based filtering, collaborative filtering and matrix factorization.",
+"Utilized Shapley values to demonstrate how recommendations are made.",
+"Applied the Shapley values to GPT-4’s multimodal LLM."
+
+      ]
+    },
+    {
       title: "Spatiotemporal Ensemble Modeling for Urban Taxi Travel Time Prediction",
       description: "Advanced machine learning model for predicting taxi travel times using spatiotemporal data analysis and ensemble methods.",
       technologies: ["Python", "TensorFlow", "Pandas", "Scikit-learn", "Geospatial Analysis"],

@@ -22,11 +22,11 @@ const Index = () => {
         <section id="experience">
           <Experience />
         </section>
-        <section id="skills">
-          <Skills />
-        </section>
         <section id="projects">
           <Projects />
+        </section>
+        <section id="skills">
+          <Skills />
         </section>
         <section id="contact">
           <Contact />

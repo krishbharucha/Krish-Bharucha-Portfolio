@@ -1,6 +1,6 @@
-
 import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { FileText } from "lucide-react";
 
 export const Hero = () => {
   const scrollToAbout = () => {
@@ -13,11 +13,11 @@ export const Hero = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-black via-gray-900 to-black overflow-hidden">
-      {/* Background Image Integration */}
+      {/* Background Image */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-0 right-0 w-2/3 h-full">
           <img 
-            src="/lovable-uploads/d508ddea-80f4-4d23-adbb-e18a6e50edff.png"
+            src="uploads/d508ddea-80f4-4d23-adbb-e18a6e50edff.png"
             alt="Krish Bharucha Background"
             className="w-full h-full object-cover object-center"
             style={{
@@ -27,45 +27,52 @@ export const Hero = () => {
           />
         </div>
       </div>
-
-      {/* Floating Profile Elements */}
-      <div className="absolute top-20 right-20 w-32 h-32 rounded-full overflow-hidden opacity-30 animate-fade-in">
-        <img 
-          src="/lovable-uploads/d508ddea-80f4-4d23-adbb-e18a6e50edff.png"
-          alt="Krish Bharucha"
-          className="w-full h-full object-cover blur-sm"
-        />
-      </div>
-
-      <div className="absolute bottom-32 right-40 w-24 h-24 rounded-full overflow-hidden opacity-20 animate-fade-in">
-        <img 
-          src="/lovable-uploads/d508ddea-80f4-4d23-adbb-e18a6e50edff.png"
-          alt="Krish Bharucha"
-          className="w-full h-full object-cover blur-md"
-        />
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 relative z-10 w-full">
+        <div className="grid grid-cols-1 gap-12 items-start">
           {/* Content */}
-          <div className="space-y-8 text-center lg:text-left">
+          <div className="space-y-8 text-left">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold text-white animate-fade-in">
-                Krish
+                
                 <br />
-                <span className="text-blue-400">Bharucha</span>
+                <span className="text-gray-400"></span>
               </h1>
+
+              <div className="flex flex-col space-y-2">
+  <div className="flex space-x-1 text-5xl lg:text-7xl font-bold text-white">
+    {"KRISH".split("").map((char, i) => (
+      <span
+        key={i}
+        className="inline-block animate-fade-in"
+        style={{ animationDelay: `${i * 0.1}s`, animationFillMode: "both" }}
+      >
+        {char}
+      </span>
+    ))}
+  </div>
+  <div className="flex space-x-1 text-5xl lg:text-7xl font-bold text-gray-400">
+    {"BHARUCHA".split("").map((char, i) => (
+      <span
+        key={i}
+        className="inline-block animate-fade-in"
+        style={{ animationDelay: `${(i + 5) * 0.1}s`, animationFillMode: "both" }}
+      >
+        {char}
+      </span>
+    ))}
+  </div>
+</div>
+              
               <p className="text-xl lg:text-2xl text-gray-300 animate-fade-in">
-                AI & Data Science Professional
+                Data Scientist, AI Developer, Product Manager and Consultant
               </p>
               <p className="text-lg text-gray-400 max-w-2xl animate-fade-in">
-                Aspiring AI researcher and product engineer specializing in machine learning, 
-                spatiotemporal modeling, and computer vision. Currently pursuing MSIM at 
-                University of Washington, Seattle.
+              At the intersection of Artificial Intelligence, Machine Learning, and Data Science, I am driven by a passion for innovation and discovery. I specialize in transforming complex data landscapes into groundbreaking solutions that propel organizations forward. My expertise lies in building intelligent, adaptive systems that not only solve today's challenges but anticipate tomorrow's opportunities. 
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in">
+            {/* <div className="flex flex-col sm:flex-row gap-4 justify-start animate-fade-in">
               <Button
                 onClick={scrollToContact}
                 className="bg-gradient-to-r from-pink-300 to-purple-300 hover:from-pink-400 hover:to-purple-400 text-gray-800 px-8 py-3 text-lg font-semibold transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border-0"
@@ -79,57 +86,41 @@ export const Hero = () => {
               >
                 Learn More
               </Button>
-            </div>
+            </div> */}
 
-            <div className="flex gap-6 justify-center lg:justify-start animate-fade-in">
+            <div className="flex gap-6 justify-start animate-fade-in">
               <a
                 href="https://github.com/krishbharucha"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-gradient-to-r from-green-200 to-emerald-200 flex items-center justify-center text-gray-700 hover:from-green-300 hover:to-emerald-300 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
-              >
+                className="w-12 h-12 rounded-full bg-white text-black flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl">
+
                 <Github size={24} />
               </a>
               <a
                 href="https://linkedin.com/in/krish-bharucha"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-gradient-to-r from-yellow-200 to-orange-200 flex items-center justify-center text-gray-700 hover:from-yellow-300 hover:to-orange-300 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
-              >
+                className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-blue-700 text-white flex items-center justify-center hover:from-blue-600 hover:to-blue-800 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl">
+
                 <Linkedin size={24} />
               </a>
               <a
-                href="mailto:krish.bharucha@email.com"
-                className="w-12 h-12 rounded-full bg-gradient-to-r from-rose-200 to-pink-200 flex items-center justify-center text-gray-700 hover:from-rose-300 hover:to-pink-300 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
-              >
+                href="mailto:krishb17@uw.edu"
+                className="w-12 h-12 rounded-full bg-gradient-to-r from-rose-400 to-fuchsia-500 text-white flex items-center justify-center hover:from-rose-500 hover:to-fuchsia-600 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl">
+
+
                 <Mail size={24} />
               </a>
-            </div>
-          </div>
-
-          {/* Main Profile Image with Blend Effect */}
-          <div className="flex justify-center lg:justify-end relative">
-            <div className="relative">
-              {/* Main Image with Gradient Blend */}
-              <div className="w-80 h-80 lg:w-96 lg:h-96 relative">
-                <div className="absolute inset-0 rounded-full overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/d508ddea-80f4-4d23-adbb-e18a6e50edff.png"
-                    alt="Krish Bharucha - AI & Data Science Professional"
-                    className="w-full h-full object-cover"
-                    style={{
-                      maskImage: 'radial-gradient(circle at center, black 60%, transparent 100%)',
-                      WebkitMaskImage: 'radial-gradient(circle at center, black 60%, transparent 100%)'
-                    }}
-                  />
-                </div>
-                
-                {/* Gradient Overlay for Seamless Blending */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/30 via-purple-600/20 to-transparent rounded-full"></div>
-                
-                {/* Animated Border Effect */}
-                <div className="absolute inset-0 rounded-full border-2 border-gradient-to-br from-blue-400/50 to-purple-400/50 animate-pulse"></div>
-              </div>
+              <a
+  href="https://drive.google.com/file/d/1sUxa6P4ykzB4V-8LRxXzpbIv99xRKGXp/view?usp=drive_link"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-12 h-12 rounded-full bg-gradient-to-r from-amber-400 to-yellow-500 text-white flex items-center justify-center hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
+  aria-label="Resume"
+>
+  <FileText size={24} />
+</a>
             </div>
           </div>
         </div>
