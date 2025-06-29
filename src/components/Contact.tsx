@@ -72,8 +72,8 @@ export const Contact = () => {
               <div className="space-y-4">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-blue-600/20 flex items-center justify-center">
-                      <info.icon className="text-blue-400" size={20} />
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-200 to-purple-200 flex items-center justify-center transform hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl">
+                      <info.icon className="text-gray-700" size={20} />
                     </div>
                     <div>
                       <p className="text-gray-400 text-sm">{info.label}</p>
@@ -179,7 +179,7 @@ export const Contact = () => {
 
               <Button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3"
+                className="w-full bg-gradient-to-r from-cyan-200 to-blue-200 hover:from-cyan-300 hover:to-blue-300 text-gray-800 font-medium py-3 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border-0"
               >
                 <Send size={18} className="mr-2" />
                 Send Message

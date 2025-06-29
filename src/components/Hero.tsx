@@ -36,14 +36,14 @@ export const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in">
               <Button
                 onClick={scrollToContact}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg"
+                className="bg-gradient-to-r from-pink-300 to-purple-300 hover:from-pink-400 hover:to-purple-400 text-gray-800 px-8 py-3 text-lg font-semibold transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border-0"
               >
                 Get In Touch
               </Button>
               <Button
                 onClick={scrollToAbout}
                 variant="outline"
-                className="border-gray-600 text-white hover:bg-gray-800 px-8 py-3 text-lg"
+                className="bg-gradient-to-r from-blue-200 to-cyan-200 hover:from-blue-300 hover:to-cyan-300 border-0 text-gray-800 px-8 py-3 text-lg font-semibold transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 Learn More
               </Button>
@@ -54,7 +54,7 @@ export const Hero = () => {
                 href="https://github.com/krishbharucha"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors duration-200"
+                className="w-12 h-12 rounded-full bg-gradient-to-r from-green-200 to-emerald-200 flex items-center justify-center text-gray-700 hover:from-green-300 hover:to-emerald-300 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
               >
                 <Github size={24} />
               </a>
@@ -62,13 +62,13 @@ export const Hero = () => {
                 href="https://linkedin.com/in/krish-bharucha"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors duration-200"
+                className="w-12 h-12 rounded-full bg-gradient-to-r from-yellow-200 to-orange-200 flex items-center justify-center text-gray-700 hover:from-yellow-300 hover:to-orange-300 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
               >
                 <Linkedin size={24} />
               </a>
               <a
                 href="mailto:krish.bharucha@email.com"
-                className="text-gray-400 hover:text-white transition-colors duration-200"
+                className="w-12 h-12 rounded-full bg-gradient-to-r from-rose-200 to-pink-200 flex items-center justify-center text-gray-700 hover:from-rose-300 hover:to-pink-300 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
               >
                 <Mail size={24} />
               </a>
@@ -92,8 +92,11 @@ export const Hero = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <button onClick={scrollToAbout} className="text-gray-400 hover:text-white transition-colors duration-200">
-          <ChevronDown size={32} />
+        <button 
+          onClick={scrollToAbout} 
+          className="w-12 h-12 rounded-full bg-gradient-to-r from-indigo-200 to-purple-200 flex items-center justify-center text-gray-700 hover:from-indigo-300 hover:to-purple-300 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
+        >
+          <ChevronDown size={24} />
         </button>
       </div>
     </div>

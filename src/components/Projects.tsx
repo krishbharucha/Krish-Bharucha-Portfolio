@@ -117,15 +117,24 @@ export const Projects = () => {
                 </div>
 
                 <div className="flex gap-3 pt-4">
-                  <Button size="sm" variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-800">
+                  <Button 
+                    size="sm" 
+                    className="bg-gradient-to-r from-mint-200 to-green-200 hover:from-mint-300 hover:to-green-300 text-gray-800 border-0 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg"
+                  >
                     <Github size={16} className="mr-2" />
                     Code
                   </Button>
-                  <Button size="sm" variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-800">
+                  <Button 
+                    size="sm" 
+                    className="bg-gradient-to-r from-blue-200 to-indigo-200 hover:from-blue-300 hover:to-indigo-300 text-gray-800 border-0 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg"
+                  >
                     <ExternalLink size={16} className="mr-2" />
                     Demo
                   </Button>
-                  <Button size="sm" variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-800">
+                  <Button 
+                    size="sm" 
+                    className="bg-gradient-to-r from-purple-200 to-pink-200 hover:from-purple-300 hover:to-pink-300 text-gray-800 border-0 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg"
+                  >
                     <FileText size={16} className="mr-2" />
                     Paper
                   </Button>
