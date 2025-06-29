@@ -79,10 +79,12 @@ export const Hero = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 p-1 animate-fade-in">
-                <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center">
-                  <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center">
-                    <span className="text-6xl lg:text-8xl font-bold text-white">KB</span>
-                  </div>
+                <div className="w-full h-full rounded-full overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/d508ddea-80f4-4d23-adbb-e18a6e50edff.png"
+                    alt="Krish Bharucha - AI & Data Science Professional"
+                    className="w-full h-full object-cover rounded-full"
+                  />
                 </div>
               </div>
             </div>
