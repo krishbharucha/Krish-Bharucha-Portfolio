@@ -12,8 +12,40 @@ export const Hero = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-black via-gray-900 to-black">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+    <div className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-black via-gray-900 to-black overflow-hidden">
+      {/* Background Image Integration */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-0 right-0 w-2/3 h-full">
+          <img 
+            src="/lovable-uploads/d508ddea-80f4-4d23-adbb-e18a6e50edff.png"
+            alt="Krish Bharucha Background"
+            className="w-full h-full object-cover object-center"
+            style={{
+              maskImage: 'radial-gradient(ellipse at center right, black 30%, transparent 70%)',
+              WebkitMaskImage: 'radial-gradient(ellipse at center right, black 30%, transparent 70%)'
+            }}
+          />
+        </div>
+      </div>
+
+      {/* Floating Profile Elements */}
+      <div className="absolute top-20 right-20 w-32 h-32 rounded-full overflow-hidden opacity-30 animate-fade-in">
+        <img 
+          src="/lovable-uploads/d508ddea-80f4-4d23-adbb-e18a6e50edff.png"
+          alt="Krish Bharucha"
+          className="w-full h-full object-cover blur-sm"
+        />
+      </div>
+
+      <div className="absolute bottom-32 right-40 w-24 h-24 rounded-full overflow-hidden opacity-20 animate-fade-in">
+        <img 
+          src="/lovable-uploads/d508ddea-80f4-4d23-adbb-e18a6e50edff.png"
+          alt="Krish Bharucha"
+          className="w-full h-full object-cover blur-md"
+        />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="space-y-8 text-center lg:text-left">
@@ -75,17 +107,28 @@ export const Hero = () => {
             </div>
           </div>
 
-          {/* Profile Image */}
-          <div className="flex justify-center lg:justify-end">
+          {/* Main Profile Image with Blend Effect */}
+          <div className="flex justify-center lg:justify-end relative">
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 p-1 animate-fade-in">
-                <div className="w-full h-full rounded-full overflow-hidden">
+              {/* Main Image with Gradient Blend */}
+              <div className="w-80 h-80 lg:w-96 lg:h-96 relative">
+                <div className="absolute inset-0 rounded-full overflow-hidden">
                   <img 
                     src="/lovable-uploads/d508ddea-80f4-4d23-adbb-e18a6e50edff.png"
                     alt="Krish Bharucha - AI & Data Science Professional"
-                    className="w-full h-full object-cover rounded-full"
+                    className="w-full h-full object-cover"
+                    style={{
+                      maskImage: 'radial-gradient(circle at center, black 60%, transparent 100%)',
+                      WebkitMaskImage: 'radial-gradient(circle at center, black 60%, transparent 100%)'
+                    }}
                   />
                 </div>
+                
+                {/* Gradient Overlay for Seamless Blending */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/30 via-purple-600/20 to-transparent rounded-full"></div>
+                
+                {/* Animated Border Effect */}
+                <div className="absolute inset-0 rounded-full border-2 border-gradient-to-br from-blue-400/50 to-purple-400/50 animate-pulse"></div>
               </div>
             </div>
           </div>
