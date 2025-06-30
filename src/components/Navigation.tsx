@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -50,9 +49,12 @@ export const Navigation = () => {
     <nav className="fixed top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="text-2xl font-bold text-white">
-            Krish Bharucha
-          </div>
+          {/* Name with Dancing Script font */}
+          <a
+            href="/"
+            className="text-3xl font-dancing text-white italic hover:text-gray-300 transition duration-300"
+          >
+&lt;Krish Bharucha /&gt;          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">

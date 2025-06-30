@@ -18,14 +18,10 @@ export default {
       },
     },
     extend: {
-      /* ------------------------------------------------------------------ */
-      /*  Typography                                                        */
-      /* ------------------------------------------------------------------ */
       fontFamily: {
-        /** Body / UI font → use with `font-sans`                            */
         sans: ["InterVariable", "sans-serif"],
-        /** Optional display font → use with `font-display` (e.g. headings) */
         display: ["Space Grotesk", "sans-serif"],
+        dancing: ["'Dancing Script'", "cursive"], // ✅ Newly added font
       },
 
       fontSize: {
@@ -42,9 +38,6 @@ export default {
         "7xl": ["4.5rem", { lineHeight: "1" }],
       },
 
-      /* ------------------------------------------------------------------ */
-      /*  Colours                                                           */
-      /* ------------------------------------------------------------------ */
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -95,18 +88,12 @@ export default {
         },
       },
 
-      /* ------------------------------------------------------------------ */
-      /*  Radius                                                            */
-      /* ------------------------------------------------------------------ */
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
 
-      /* ------------------------------------------------------------------ */
-      /*  Animations                                                        */
-      /* ------------------------------------------------------------------ */
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -125,6 +112,7 @@ export default {
           "50%": { transform: "translateY(-4px)" },
         },
       },
+
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",

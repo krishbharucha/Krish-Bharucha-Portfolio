@@ -57,7 +57,7 @@ export const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:krish.bharucha@email.com"
+                href="mailto:krishb17@uw.edu"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-700 transition-colors duration-200"
               >
                 <Mail size={20} />
@@ -74,7 +74,7 @@ export const Footer = () => {
             © {currentYear} Krish Bharucha. All rights reserved.
           </p>
           <p className="text-gray-400 text-sm flex items-center gap-1 mt-2 sm:mt-0">
-            Built with <Heart size={16} className="text-red-500" /> and modern web technologies
+            Developed by Krish Bharucha
           </p>
         </div>
       </div>
