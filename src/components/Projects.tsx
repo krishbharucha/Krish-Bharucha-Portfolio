@@ -1,4 +1,3 @@
-
 import { ExternalLink, Github, FileText } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -7,78 +6,129 @@ export const Projects = () => {
   const projects = [
     {
       title: "Enhancing Interpretability in Diverse Recommendation System through Explainable AI Techniques",
-      description: "Advanced machine learning model for predicting taxi travel times using spatiotemporal data analysis and ensemble methods.",
-      technologies: ["Python", "TensorFlow", "Pandas", "Scikit-learn", "XAI"],
+      description: "",
+      technologies: ["Python", "TensorFlow", "Pandas", "Scikit-learn", "XAI", "SHAP values"],
       type: "Research Publication",
       highlights: [
         "Published the research paper in the Journal of Computational Analysis and Applications (Vol. 32 No. 1 (2024)) which is Scopus Indexed.",
         "Explored various methods for making recommendation algorithms more interpretable such as the content-based filtering, collaborative filtering and matrix factorization.",
-"Utilized Shapley values to demonstrate how recommendations are made.",
-"Applied the Shapley values to GPT-4’s multimodal LLM."
-
-      ]
+        "Utilized Shapley values to demonstrate how recommendations are made.",
+        "Applied the Shapley values to GPT-4’s multimodal LLM."
+      ],
+      code: "https://github.com/krishbharucha/XAI.git",
+      demo: null,
+      publication: "https://eudoxuspress.com/index.php/pub/article/view/1427"
     },
     {
       title: "Spatiotemporal Ensemble Modeling for Urban Taxi Travel Time Prediction",
-      description: "Advanced machine learning model for predicting taxi travel times using spatiotemporal data analysis and ensemble methods.",
-      technologies: ["Python", "TensorFlow", "Pandas", "Scikit-learn", "Geospatial Analysis"],
+      description: "",
+      technologies: ["Python", "TensorFlow", "Pandas", "Scikit-learn", "Geospatial Analysis", "Ensemble Models"],
       type: "Research Publication",
       highlights: [
-        "Developed novel ensemble modeling approach",
-        "Achieved 15% improvement in prediction accuracy",
-        "Published in academic conference",
-        "Applied to real-world urban planning scenarios"
-      ]
+        "Published the research paper in the Journal of Computational Analysis and Applications (Vol. 32 No. 1 (2024)) which is Scopus Indexed.",
+        "Compared models like KNN Regressor (integrated with Hill Climb Racing), Random Forest, Decision Tree and Stacking model to predict taxi travel time.",
+        "Achieved an accuracy of 99.999% for the Stacking model and 99.83% for Random Forest."
+      ],
+      code: "https://github.com/krishbharucha/SpatioTemporal-Ensemble.git",
+      demo: null,
+      publication: "https://eudoxuspress.com/index.php/pub/article/view/1411"
+    },
+    {
+      title: "Federated Learning Approach for adressing Ethical Issues in AI",
+      description: "",
+      technologies: ["Python", "PyTorch", "Federated Models", "Confidence Scoring Mechanisms"],
+      type: "Research Project",
+      highlights: [
+        "Published the research paper in the 6th International Conference of Data Science and Applications (ICDSA).",
+        "Developed a Federated Learning framework with differential privacy for secure, fair data processing.",
+        "Integrated a Decision Verification Layer and Confidence Scoring Mechanism to enhance accountability and transparency."
+      ],
+      code: "https://github.com/krishbharucha/Federated-Learning-for-addressing-Ethical-Issues-in-AI.git",
+      demo: null,
+      publication: ""
     },
     {
       title: "VetAssistant AI",
-      description: "AI-driven veterinary diagnosis application that assists veterinarians in making accurate diagnoses using computer vision and machine learning.",
-      technologies: ["Python", "OpenCV", "TensorFlow", "Flask", "Mobile App"],
+      description: "",
+      technologies: ["Python", "OpenCV", "TensorFlow", "Flask"],
       type: "Product Development",
       highlights: [
-        "Computer vision for symptom detection",
-        "Machine learning diagnosis recommendations",
-        "User-friendly mobile interface",
-        "Real-time image processing capabilities"
-      ]
+        "Developing an AI-driven web application using LangChain to assist pet owners in remote areas.",
+        "Considers pet disease progression and then provides treatment recommendations based on multimodal inputs.",
+        "Integrated TensorFlow models to analyze images of pet injuries or skin infections.",
+        "Using the LeafLet API, user has access to nearby veterinary doctors."
+      ],
+      code: null,
+      demo: null,
+      publication: null
     },
     {
-      title: "Federated Learning for Ethical AI",
-      description: "Research project exploring federated learning approaches to ensure privacy-preserving and ethical AI model training.",
-      technologies: ["Python", "PyTorch", "Federated Learning", "Privacy Tech"],
-      type: "Research Project",
+      title: "Cryptocurrency Framework for secured Blockchain",
+      description: "",
+      technologies: ["Python", "Blockchain", "SHA-256", "Flask"],
+      type: "Framework",
       highlights: [
-        "Privacy-preserving model training",
-        "Distributed learning architecture",
-        "Ethical AI framework development",
-        "Performance benchmarking studies"
-      ]
-    },
-    {
-      title: "Bus Damage Detection System",
-      description: "Computer vision system for automated detection and assessment of bus damage using deep learning techniques.",
-      technologies: ["Python", "OpenCV", "YOLO", "Deep Learning", "Image Processing"],
-      type: "Academic Project",
-      highlights: [
-        "Real-time damage detection",
-        "95% accuracy in damage classification",
-        "Automated reporting system",
-        "Cost-effective maintenance solution"
-      ]
+        "Built a secure cryptocurrency framework using Python and blockchain principles, featuring wallet creation, transaction handling, mining, and block validation through Proof of Work.",
+        "Implemented custom block architecture with SHA-256 hashing and RSA encryption to ensure data integrity, transaction authenticity, and resistance to tampering.",
+        "Simulated end-to-end cryptocurrency operations, including digital signatures and consensus mechanisms, to reflect decentralized and transparent transaction models.",
+        "Designed a flexible platform allowing users to create their own currencies, showcasing the adaptability and scalability of the blockchain-based system."
+      ],
+      code: "https://github.com/krishbharucha/Cryptocurrency-Framework.git",
+      demo: "",
+      publication: null
     },
     {
       title: "TogetherNow Social Service App",
-      description: "Social platform connecting volunteers with community service opportunities, featuring matching algorithms and impact tracking.",
-      technologies: ["React Native", "Node.js", "MongoDB", "Machine Learning"],
-      type: "Social Impact",
+      description: "",
+      technologies: ["Machine learning", "Node.js", "MongoDB", "Flutter"],
+      type: "Product Development",
       highlights: [
-        "AI-powered volunteer matching",
-        "Impact measurement dashboard",
-        "Community engagement features",
-        "Scalable architecture design"
-      ]
+        "Social service application designed to connect elderly individuals requiring assistance with young volunteers eager to offer support in banking, healthcare and daily chores.",
+        "Integrated Generative AI technology in the form of a responsive chatbot tailored to assist elderly individuals which involves answering all the questions in all local languages efficiently.",
+        "Implemented a robust SOS emergency button feature within the app, which would automatically alert designated kin of the elderly individual in critical situations.",
+        "Integrated Aadhar Card Verification at the start of the application as a security measure."
+      ],
+      code: "https://github.com/krishbharucha/Aadhar-Verification.git",
+      demo: null,
+      publication: null
+    },
+    {
+      title: "ClimaStat",
+      description: "",
+      technologies: ["Python", "NumPy", "Pandas", "Matplotlib", "Seaborn"],
+      type: "Data Analysis",
+      highlights: [
+        "Conducted EDA on a large climate dataset, extracting key metrics on temperature changes across cities and countries, hence ensuring data quality for accurate analysis.",
+        "Applied time series analysis and statistical modelling techniques which includes ADF tests and ARIMA models, to identify trends and patterns in global temperature variations, predicting future climate changes.",
+        "Visualized through graphs and heatmaps using Matplotlib and Seaborn, showcasing temporal and geographical temperature patterns."
+      ],
+      code: "https://github.com/krishbharucha/ClimaStat.git",
+      demo: null,
+      publication: null
     }
   ];
+
+  const Btn = ({
+    url,
+    gradient,
+    Icon,
+    label
+  }: {
+    url: string;
+    gradient: string;
+    Icon: React.ElementType;
+    label: string;
+  }) => (
+    <a href={url} target="_blank" rel="noopener noreferrer">
+      <Button
+        size="sm"
+        className={`bg-gradient-to-r ${gradient} text-gray-800 border-0 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg`}
+      >
+        <Icon size={16} className="mr-2" />
+        {label}
+      </Button>
+    </a>
+  );
 
   return (
     <section className="py-20 bg-black">
@@ -91,25 +141,28 @@ export const Projects = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
-            <Card key={index} className="p-6 bg-gray-900 border-gray-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-[1.02]">
+          {projects.map((p, i) => (
+            <Card
+              key={i}
+              className="p-6 bg-gray-900 border border-gray-700 hover:border-[#EDE8D0] transition-all duration-300 hover:scale-[1.02] rounded-2xl"
+            >
               <div className="space-y-4">
                 <div className="flex justify-between items-start gap-4">
-                  <h3 className="text-xl font-bold text-white leading-tight">{project.title}</h3>
-                  <span className="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-xs font-medium border border-blue-600/30 whitespace-nowrap">
-                    {project.type}
+                  <h3 className="text-xl font-bold text-white leading-tight">{p.title}</h3>
+                  <span className="px-3 py-1 bg-[#EDE8D0]/10 text-[#EDE8D0] rounded-full text-xs font-medium border border-[#EDE8D0]/30 whitespace-nowrap">
+                    {p.type}
                   </span>
                 </div>
 
-                <p className="text-gray-400 leading-relaxed">{project.description}</p>
+                {/* No Description Rendered */}
 
                 <div>
                   <h4 className="text-sm font-semibold text-white mb-3">Key Highlights:</h4>
                   <ul className="space-y-2">
-                    {project.highlights.map((highlight, highlightIndex) => (
-                      <li key={highlightIndex} className="flex items-start gap-2">
-                        <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div>
-                        <span className="text-gray-300 text-sm">{highlight}</span>
+                    {p.highlights.map((h, j) => (
+                      <li key={j} className="flex items-start gap-2">
+                        <div className="w-1.5 h-1.5 rounded-full bg-[#EDE8D0] mt-2 flex-shrink-0" />
+                        <span className="text-gray-300 text-sm">{h}</span>
                       </li>
                     ))}
                   </ul>
@@ -118,9 +171,9 @@ export const Projects = () => {
                 <div>
                   <h4 className="text-sm font-semibold text-white mb-3">Technologies:</h4>
                   <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, techIndex) => (
+                    {p.technologies.map((tech, t) => (
                       <span
-                        key={techIndex}
+                        key={t}
                         className="px-3 py-1 bg-gray-800 text-gray-300 rounded-md text-xs font-medium border border-gray-700"
                       >
                         {tech}
@@ -129,28 +182,31 @@ export const Projects = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-3 pt-4">
-                  <Button 
-                    size="sm" 
-                    className="bg-gradient-to-r from-mint-200 to-green-200 hover:from-mint-300 hover:to-green-300 text-gray-800 border-0 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg"
-                  >
-                    <Github size={16} className="mr-2" />
-                    Code
-                  </Button>
-                  <Button 
-                    size="sm" 
-                    className="bg-gradient-to-r from-blue-200 to-indigo-200 hover:from-blue-300 hover:to-indigo-300 text-gray-800 border-0 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg"
-                  >
-                    <ExternalLink size={16} className="mr-2" />
-                    Demo
-                  </Button>
-                  <Button 
-                    size="sm" 
-                    className="bg-gradient-to-r from-purple-200 to-pink-200 hover:from-purple-300 hover:to-pink-300 text-gray-800 border-0 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg"
-                  >
-                    <FileText size={16} className="mr-2" />
-                    Paper
-                  </Button>
+                <div className="flex gap-3 pt-4 flex-wrap">
+                  {p.code && (
+                    <Btn
+                      url={p.code}
+                      gradient="from-mint-200 to-green-200 hover:from-mint-300 hover:to-green-300"
+                      Icon={Github}
+                      label="Code"
+                    />
+                  )}
+                  {p.demo && (
+                    <Btn
+                      url={p.demo}
+                      gradient="from-blue-200 to-indigo-200 hover:from-blue-300 hover:to-indigo-300"
+                      Icon={ExternalLink}
+                      label="Demo"
+                    />
+                  )}
+                  {p.publication && (
+                    <Btn
+                      url={p.publication}
+                      gradient="from-purple-200 to-pink-200 hover:from-purple-300 hover:to-pink-300"
+                      Icon={FileText}
+                      label="Publication"
+                    />
+                  )}
                 </div>
               </div>
             </Card>
