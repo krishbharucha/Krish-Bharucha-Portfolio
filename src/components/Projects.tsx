@@ -146,24 +146,22 @@ export const Projects = () => {
           {projects.map((p, i) => (
             <Card
               key={i}
-              className="p-6 bg-gray-900 border border-gray-700 hover:border-[#EDE8D0] transition-all duration-300 hover:scale-[1.02] rounded-2xl"
+              className="p-6 bg-gray-900 border border-gray-700 hover:border-[#5c9ead] transition-all duration-300 hover:scale-[1.02] rounded-2xl"
             >
               <div className="space-y-4">
                 <div className="flex justify-between items-start gap-4">
                   <h3 className="text-xl font-bold text-white leading-tight">{p.title}</h3>
-                  <span className="px-3 py-1 bg-[#EDE8D0]/10 text-[#EDE8D0] rounded-full text-xs font-medium border border-[#EDE8D0]/30 whitespace-nowrap">
+                  <span className="px-3 py-1 bg-[#5c9ead]/10 text-[#5c9ead] rounded-full text-xs font-medium border border-[#5c9ead]/30 whitespace-nowrap">
                     {p.type}
                   </span>
                 </div>
-
-                {/* Description is intentionally left blank */}
 
                 <div>
                   <h4 className="text-sm font-semibold text-white mb-3">Key Highlights:</h4>
                   <ul className="space-y-2">
                     {p.highlights.map((h, j) => (
                       <li key={j} className="flex items-start gap-2">
-                        <div className="w-1.5 h-1.5 rounded-full bg-[#EDE8D0] mt-2 flex-shrink-0" />
+                        <div className="w-1.5 h-1.5 rounded-full bg-[#5c9ead] mt-2 flex-shrink-0" />
                         <span className="text-gray-300 text-sm">{h}</span>
                       </li>
                     ))}

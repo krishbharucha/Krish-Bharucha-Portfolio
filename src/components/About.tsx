@@ -11,7 +11,7 @@ export const About = () => {
           </h2>
 
           {/* ✨ Gradient line below heading */}
-          <div className="h-1 w-28 mx-auto bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full mb-6 animate-pulse" />
+          <div className="h-1 w-28 mx-auto bg-gradient-to-r from-[#5c9ead] via-purple-500 to-pink-500 rounded-full mb-6 animate-pulse" />
 
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Passionate about AI and data science to solve real-world problems
@@ -32,21 +32,21 @@ export const About = () => {
           </div>
 
           <div className="space-y-6">
-            <Card className="p-6 bg-gradient-to-br from-gray-800 via-gray-900 to-black border border-gray-700 shadow-xl rounded-2xl animate-fade-in transition-all duration-500 hover:scale-[1.02] hover:border-blue-400">
+            <Card className="p-6 bg-gradient-to-br from-gray-800 via-gray-900 to-black border border-gray-700 shadow-xl rounded-2xl animate-fade-in transition-all duration-500 hover:scale-[1.02] hover:border-[#5c9ead]">
               <div className="flex items-start gap-4">
-                <GraduationCap className="text-blue-400 mt-1 animate-bounce-slow" size={24} />
+                <GraduationCap className="text-[#5c9ead] mt-1 animate-bounce-slow" size={24} />
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-4 tracking-tight">Education</h3>
                   <div className="space-y-5">
                     <div className="transition-transform hover:scale-[1.02]">
-                      <h4 className="text-lg font-medium text-blue-400">
+                      <h4 className="text-lg font-medium text-[#5c9ead]">
                         Master of Science in Information Management (MSIM)
                       </h4>
                       <p className="text-gray-400">University of Washington, Seattle</p>
                       <p className="text-gray-500">2025 - 2027</p>
                     </div>
                     <div className="transition-transform hover:scale-[1.02]">
-                      <h4 className="text-lg font-medium text-blue-400">
+                      <h4 className="text-lg font-medium text-[#5c9ead]">
                         B.Tech in Computer Engineering
                       </h4>
                       <p className="text-gray-400">Dwarkadas J. Sanghvi College of Engineering</p>
@@ -57,9 +57,9 @@ export const About = () => {
               </div>
             </Card>
 
-            <Card className="p-6 bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800 border border-gray-700 rounded-2xl shadow-xl animate-fade-in transition-all duration-500 hover:scale-[1.02] hover:border-blue-400">
+            <Card className="p-6 bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800 border border-gray-700 rounded-2xl shadow-xl animate-fade-in transition-all duration-500 hover:scale-[1.02] hover:border-[#5c9ead]">
               <div className="flex items-start gap-4">
-                <MapPin className="text-blue-400 mt-1 animate-bounce-slow" size={24} />
+                <MapPin className="text-[#5c9ead] mt-1 animate-bounce-slow" size={24} />
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-1 font-display tracking-wide">Location</h3>
                   <p className="text-gray-300 font-sans">Seattle, Washington</p>
@@ -73,3 +73,4 @@ export const About = () => {
     </section>
   );
 };
+

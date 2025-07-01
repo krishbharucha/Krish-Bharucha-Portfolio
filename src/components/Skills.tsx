@@ -42,12 +42,12 @@ export const Skills = () => {
         <div className="space-y-10">
           {skillCategories.map((category, index) => (
             <div key={index}>
-              <h3 className="text-2xl font-semibold text-blue-400 mb-4">{category.title}</h3>
+              <h3 className="text-2xl font-semibold text-[#5c9ead] mb-4">{category.title}</h3>
               <div className="flex flex-wrap gap-3 text-sm text-gray-200">
                 {category.skills.map((skill, idx) => (
                   <span
                     key={idx}
-                    className="bg-gray-800 px-3 py-1 rounded-full hover:bg-blue-600 transition-colors duration-200"
+                    className="bg-gray-800 px-3 py-1 rounded-full hover:bg-[#5c9ead] hover:text-black transition-colors duration-200"
                   >
                     {skill}
                   </span>
