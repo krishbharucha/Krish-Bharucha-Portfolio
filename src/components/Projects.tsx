@@ -74,7 +74,7 @@ export const Projects = () => {
         "Designed a flexible platform allowing users to create their own currencies, showcasing the adaptability and scalability of the blockchain-based system."
       ],
       code: "https://github.com/krishbharucha/Cryptocurrency-Frameworkk.git",
-      demo: "https://krishbharuchacryptocurrency-framework.netlify.app/node.html",
+      demo: "https://krishbharuchacryptocurrency-framework.netlify.app/",
       publication: null
     },
     {
