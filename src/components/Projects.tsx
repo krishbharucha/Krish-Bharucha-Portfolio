@@ -73,8 +73,8 @@ export const Projects = () => {
         "Simulated end-to-end cryptocurrency operations, including digital signatures and consensus mechanisms, to reflect decentralized and transparent transaction models.",
         "Designed a flexible platform allowing users to create their own currencies, showcasing the adaptability and scalability of the blockchain-based system."
       ],
-      code: "https://github.com/krishbharucha/Cryptocurrency-Framework.git",
-      demo: "",
+      code: "https://github.com/krishbharucha/Cryptocurrency-Frameworkk.git",
+      demo: "https://krishbharuchacryptocurrency-framework.netlify.app/node.html",
       publication: null
     },
     {
