@@ -24,7 +24,7 @@ export const Navigation = () => {
         if (element) {
           const offsetTop = element.offsetTop;
           const offsetBottom = offsetTop + element.offsetHeight;
-          
+
           if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
             setActiveSection(section);
             break;
@@ -49,31 +49,33 @@ export const Navigation = () => {
     <nav className="fixed top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          {/* Name with Dancing Script font */}
+          {/* Name */}
           <a
             href="/"
             className="text-3xl font-dancing text-white italic hover:text-gray-300 transition duration-300"
           >
-&lt;Krish Bharucha /&gt;          </a>
+            &lt;Krish Bharucha /&gt;
+          </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-4">
             {navItems.map((item) => (
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className={`text-sm font-medium transition-colors duration-200 hover:text-blue-400 ${
-                  activeSection === item.href.substring(1)
-                    ? "text-blue-400"
-                    : "text-gray-300"
-                }`}
+                className={`text-sm font-medium px-4 py-2 transition-all duration-200 
+                  ${
+                    activeSection === item.href.substring(1)
+                      ? "bg-[#5c9ead] text-white"
+                      : "text-gray-300 hover:bg-[#5c9ead] hover:text-white"
+                  }`}
               >
                 {item.label}
               </button>
             ))}
           </div>
 
-          {/* Mobile Navigation Button */}
+          {/* Mobile Menu Toggle */}
           <button
             className="md:hidden text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -85,16 +87,17 @@ export const Navigation = () => {
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
           <div className="md:hidden bg-black/95 absolute top-full left-0 w-full border-b border-gray-800">
-            <div className="px-4 py-4 space-y-4">
+            <div className="px-4 py-4 space-y-2">
               {navItems.map((item) => (
                 <button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
-                  className={`block w-full text-left text-sm font-medium transition-colors duration-200 hover:text-blue-400 ${
-                    activeSection === item.href.substring(1)
-                      ? "text-blue-400"
-                      : "text-gray-300"
-                  }`}
+                  className={`block w-full text-left text-sm font-medium px-4 py-2 transition-all duration-200 
+                    ${
+                      activeSection === item.href.substring(1)
+                        ? "bg-[#5c9ead] text-white"
+                        : "text-gray-300 hover:bg-[#5c9ead] hover:text-white"
+                    }`}
                 >
                   {item.label}
                 </button>

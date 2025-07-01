@@ -19,8 +19,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["InterVariable", "sans-serif"],
-        display: ["Space Grotesk", "sans-serif"],
+        sans: ["Poppins", "sans-serif"],
+        display: ["Poppins", "sans-serif"],
         dancing: ["'Dancing Script'", "cursive"], // ✅ Newly added font
       },
 

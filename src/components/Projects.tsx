@@ -1,4 +1,4 @@
-import { ExternalLink, Github, FileText } from "lucide-react";
+import { ExternalLink, FileText } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -112,19 +112,21 @@ export const Projects = () => {
     url,
     gradient,
     Icon,
-    label
+    label,
+    showIcon = true
   }: {
     url: string;
     gradient: string;
     Icon: React.ElementType;
     label: string;
+    showIcon?: boolean;
   }) => (
     <a href={url} target="_blank" rel="noopener noreferrer">
       <Button
         size="sm"
         className={`bg-gradient-to-r ${gradient} text-gray-800 border-0 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg`}
       >
-        <Icon size={16} className="mr-2" />
+        {showIcon && <Icon size={16} className="mr-2" />}
         {label}
       </Button>
     </a>
@@ -154,7 +156,7 @@ export const Projects = () => {
                   </span>
                 </div>
 
-                {/* No Description Rendered */}
+                {/* Description is intentionally left blank */}
 
                 <div>
                   <h4 className="text-sm font-semibold text-white mb-3">Key Highlights:</h4>
@@ -187,8 +189,9 @@ export const Projects = () => {
                     <Btn
                       url={p.code}
                       gradient="from-mint-200 to-green-200 hover:from-mint-300 hover:to-green-300"
-                      Icon={Github}
-                      label="Code"
+                      Icon={() => null}
+                      label="Project Link"
+                      showIcon={false}
                     />
                   )}
                   {p.demo && (
