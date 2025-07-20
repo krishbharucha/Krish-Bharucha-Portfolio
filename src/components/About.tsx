@@ -23,8 +23,13 @@ export const About = () => {
             <p className="text-lg text-gray-300 leading-relaxed">
               I am an aspiring AI Developer, Data Scientist, Business Analyst and Product Manager with a strong foundation in Artificial Intelligence, Machine Learning, 
               Data pipelines and Scrum. 
-              I am currently pursuing my Master of Science in Information Management (MSIM) at the University of Washington, Seattle. I bring a unique blend 
-              of Technical Expertise, Research Experience and Product Management.
+              As a Master’s student in Information Management at the University of Washington, Seattle, I bring a unique blend of technical expertise, research-driven innovation, and product-oriented thinking.
+
+My technical skills span across Python, JavaScript, C++, SQL, TensorFlow, OpenCV, NLP, Docker, and cloud platforms like AWS, equipping me to build and deploy scalable AI solutions from the ground up. I have worked extensively with Large Language Models (LLMs), XAI techniques like SHAP, and multimodal learning frameworks, and am passionate about making AI systems explainable, responsible, and aligned with real-world use cases.
+
+I help organizations translate complex data into actionable insights, enhance decision-making with intelligent automation, and drive innovation through AI-powered products. With a solid understanding of both technology and strategy, I bring cross-functional collaboration, agile execution, and systems thinking to every project, making me an ideal fit for roles in artificial intelligence, data science, and technical product and program management.
+
+Driven by curiosity, purpose, and impact, I aim to build solutions that don’t just support AI but do so with clarity, fairness, and long-term business value. I am always excited to collaborate with forward-thinking teams who are reimagining the future of technology.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
               From my childhood, I was intrigued by computers and the technology driving them. In 2021, I commenced my B.Tech. degree in Computer Engineering with Honors in Intelligent Computing at the prestigious Dwarkadas J. Sanghvi College of Engineering. Here, I immersed myself into the college experience - holistically balancing my academics and extracurriculars. I particularly excelled in subjects like Advanced Algorithms, Data Mining and Warehouse, Advanced Database Management Systems, Big Data Infrastructure, and Machine Learning.
