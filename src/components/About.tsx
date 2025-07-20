@@ -32,7 +32,6 @@ I help organizations translate complex data into actionable insights, enhance de
 Driven by curiosity, purpose, and impact, I aim to build solutions that don’t just support AI but do so with clarity, fairness, and long-term business value. I am always excited to collaborate with forward-thinking teams who are reimagining the future of technology.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              From my childhood, I was intrigued by computers and the technology driving them. In 2021, I commenced my B.Tech. degree in Computer Engineering with Honors in Intelligent Computing at the prestigious Dwarkadas J. Sanghvi College of Engineering. Here, I immersed myself into the college experience - holistically balancing my academics and extracurriculars. I particularly excelled in subjects like Advanced Algorithms, Data Mining and Warehouse, Advanced Database Management Systems, Big Data Infrastructure, and Machine Learning.
             </p>
           </div>
 
