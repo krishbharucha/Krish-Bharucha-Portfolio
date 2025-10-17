@@ -17,7 +17,7 @@ export const Hero = () => {
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-0 right-0 w-2/3 h-full">
           <img 
-            src="uploads/d508ddea-80f4-4d23-adbb-e18a6e50edff.png"
+            src="uploads/krish photo main.jpg"
             alt="Krish Bharucha Background"
             className="w-full h-full object-cover object-center"
             style={{
