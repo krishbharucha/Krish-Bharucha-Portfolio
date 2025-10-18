@@ -42,8 +42,8 @@ export const Contact = () => {
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 9820414513",
-      href: "tel:+919820414513"
+      value: "+1(206)9229554",
+      href: "tel:+1(206)9229554"
     },
     {
       icon: MapPin,
