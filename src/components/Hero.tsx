@@ -65,10 +65,9 @@ export const Hero = () => {
 </div>
               
               <p className="text-xl lg:text-2xl text-gray-300 animate-fade-in">
-                Data Scientist, AI Developer, Product Manager and Consultant
+                Machine Learning Engineer and AI Software Engineer.
               </p>
               <p className="text-lg text-gray-400 max-w-2xl animate-fade-in">
-              At the intersection of Artificial Intelligence, Machine Learning, and Data Science, I am driven by a passion for innovation and discovery. I specialize in transforming complex data landscapes into groundbreaking solutions that propel organizations forward. My expertise lies in building intelligent, adaptive systems that not only solve today's challenges but anticipate tomorrow's opportunities. 
               </p>
             </div>
 

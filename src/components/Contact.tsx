@@ -59,7 +59,7 @@ export const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Get In Touch</h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Let's connect and discuss opportunities in AI, Data Science and Product Management
+            Let's connect and discuss opportunities in AI and ML.
           </p>
         </div>
 
@@ -95,14 +95,14 @@ export const Contact = () => {
             <div>
               <h3 className="text-2xl font-semibold text-white mb-4">Let's Connect</h3>
               <p className="text-gray-400 mb-6">
-                I am always interested in discussing new opportunities, collaborations, 
-                and innovative projects in AI and Data Science. Whether you're looking 
-                for a researcher, product engineer or a consultant, I would love to hear from you.
+                I am interested in discussing new opportunities, collaborations, 
+                and innovative projects in AI and ML. Whether you're looking 
+                for a researcher, ML Engineer, I would love to hear from you.
               </p>
               <div className="space-y-3 text-gray-400">
                 <p>• Open to full-time and internship opportunities</p>
                 <p>• Available for research collaborations</p>
-                <p>• Interested in AI Product Management </p>
+                <p>• Interested in AI Software Engineering  </p>
               </div>
             </div>
           </div>
