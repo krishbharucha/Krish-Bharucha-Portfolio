@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export const Experience = () => {
   const experiences = [
     {
-      title: "Research Intern",
+      title: "Machine Learning Engineer Intern",
       company: "Indian Institute of Technology Patna",
       duration: "Aug 2024 – Jan 2025",
       location: "Remote",
@@ -17,7 +17,7 @@ export const Experience = () => {
       ]
     },
     {
-      title: "AI Product Engineer Intern",
+      title: "AI Software Engineer Intern",
       company: "DataVoice Solutions",
       duration: "Jun 2024 – Aug 2024",
       location: "Mumbai, India",
